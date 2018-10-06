@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit 4 Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">-->
+ 
+</head>
+
+<body>
+<!--is this script tag in the right place?-->
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+        ></script>
+
+    <div class="container">
+        <div class="row">
+            <h1>Crystal Collector Game</h1>
+        </div>
+    </div>  
+    
+    <div class="container">
+        <h2>Welcome to the Crystal Collector Game.  Your objective: figure out the value of each crystal in time to match the Target Number.
+        </h2>
+        <div class="row">
+            <button id="start" class="float-left">Start</button>
+            <button id="reset" class="float-left">Reset</button>
+        </div>
+
+        <div class="row">
+                <div class="col-md-12">
+                    <h4 id="targetNumber" class="float-left">Here is your Target Number:   </h4>
+                    <h4 id="totalScore" class="float-left">Here is your Total Score so far:   </h4>
+                </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-12">
+                    <h4 id="wins" class="float-left"></h4>
+                    <h4 id="losses" class="float-left"></h4> 
+                </div>
+        </div>
+
+    </div>            
+
+    <div class="container">    
+        <div class="row">
+            <div class="col-md-12">
+
+                <button id="button1" class="float-left"><img src="assets/images/Crystal1.jpg" height=200px; width=200px;></button>
+                    
+                <button id="button2" class="float-left"><img src="assets/images/Crystal2.jpg" height=200px; width=200px;></button>
+
+                <button id="button3" class="float-left"><img src="assets/images/Crystal3.jpg" height=200px; width=200p;></button>
+            
+                <button id="button4" class="float-left"><img src="assets/images/Crystal4.jpg" height=200px; width=200px;></button>
+            
+            </div>
+        </div>   
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+
+<!-- There will be four crystals displayed as buttons on the page.
+First identify global variables that will be needed
+var Wins = 0
+var Losses = 0
+var targetNumber = 0
+var totalScore = 0
+
+1. create an image file for each of four crysal images.
+2. create a html file that contains container, row, and columns for the crystal images
+3. in the html file create a reference for each container to a specific crystal image file
+4. make sure each crystal image is linked to an ID, for later referencing and jquery
+5. make sure each crystal is identified as a button that can be clickd
+
+The player will be shown a random number at the start of the game.
+CREATE A BUTTON TO START THE GAME
+6. create a space for a random number alert on the html page
+7. give that space an ID so that it can be linked to jquery
+8. in javascript file, create a random number generator that picks a number between 19 and 120
+9. in javascript file, assign each crystal button to a randomly generated value of 1-12
+
+When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
+Your game will hide this amount until the player clicks a crystal.
+When they do click one, update the player's score counter.
+10. create a calculator in javascript that adds the values from each <button>
+11. create a space on the html file to display the calculated total
+Note that Derek says it doesn't have to be a button; can be an on click linked to an image
+
+The player wins if their total score matches the random number from the beginning of the game.
+The player loses if their score goes above the random number.
+12. create if else statements that identify if the player has won or lost
+
+The game restarts whenever the player wins or loses.
+13. this is essentially a clear function
+14. make a button for the clear function
+
+When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
+15. ensure that the random number generator is activated for each reset; the target number and button numbers all have to become randomly generated again
+
+The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+16. create a variable for wins and for losses; set initial value to 0; update based on other variables for You Win and You Lose
+
+set up all the functions first, then play the game last -->
+
+
+</body>
+</html>
