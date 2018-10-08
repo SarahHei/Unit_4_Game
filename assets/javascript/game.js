@@ -16,7 +16,7 @@ targetNumber = [Math.floor(Math.random() * 120) + 19];
 
 $("#button1").on("click", function () {
     totalScore = totalScore + b1;
-    $("#totalScore").text("Here is your Total Score so far: " + totalScore);
+    $("#totalScore").text(totalScore);
     console.log(b1);
     if (totalScore === targetNumber) {
      wins++;
@@ -32,7 +32,7 @@ $("#button1").on("click", function () {
 
 $("#button2").on("click", function () {
     totalScore = totalScore + b2;
-    $("#totalScore").text("Here is your Total Score so far: " + totalScore);
+    $("#totalScore").text(totalScore);
     console.log(b2);
     if (totalScore === targetNumber) {
         wins++;
@@ -49,7 +49,7 @@ $("#button2").on("click", function () {
 
 $("#button3").on("click", function () {
     totalScore = totalScore + b3;
-    $("#totalScore").text("Here is your Total Score so far: " + totalScore);
+    $("#totalScore").text(totalScore);
     console.log(b3);
     if (totalScore === targetNumber) {
         wins++;
@@ -66,7 +66,7 @@ $("#button3").on("click", function () {
 
 $("#button4").on("click", function () {
     totalScore = totalScore + b4;
-    $("#totalScore").text("Here is your Total Score so far: " + totalScore);
+    $("#totalScore").text(totalScore);
     console.log(b4);
     if (totalScore === targetNumber) {
         wins++;
@@ -82,10 +82,10 @@ $("#button4").on("click", function () {
 );
 
 $("#reset").on("click", function() {
-    targetNumber = [Math.floor(Math.random() * 120) + 19];
+    targetNumber = [Math.floor(Math.random() * 101) + 19];
     $("#targetNumber").html(targetNumber);
     totalScore =0;
-    $("#totalScore").html("Here is your Total Score: " + totalScore);
+    $("#totalScore").html(totalScore);
     b1 = Math.floor(Math.random() *12);
     b2 = Math.floor(Math.random() *12);
     b3 = Math.floor(Math.random() *12);
