@@ -67,18 +67,16 @@ $("#button4").on("click", function () {
 }
 );
 
-    // if (totalScore === targetNumber) {
-    //     wins++;
-    //     console.log(totalScore);
-    //     $("#totalNumber").html(totalScore);
-    //     $("#wins").html("Here are your wins so far: " + wins);
-    // }
-
-    // else if (totalScore > targetNumber){
-    //     losses++;
-    //     $("#totalNumber").html(totalScore);
-    //     $("#losses").html("Here are your losses so far: " + losses);
-    // }
+if (totalScore === targetNumber) {
+     wins++;
+     console.log(wins);
+     $("#wins").html("Here are your wins so far: " + wins);
+     }
+    else if (totalScore > targetNumber){
+    losses++;
+    console.log(losses);
+    $("#losses").html("Here are your losses so far: " + losses);
+    }
 
 
 $("#reset").on("click", function() {
